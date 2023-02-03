@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div id="counter" [ngClass]="getTextColor()">{{counter}}</div>
+    <app-child [plus]="plus" [minus]="minus" [reset]="reset" (getval)="fc($event)"></app-child>
+           
+  </body>
+</html>
